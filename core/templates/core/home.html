@@ -1,0 +1,28 @@
+
+{% extends 'core/base.html' %}
+{%load static%}
+{% block content %}
+<div class="mt-5 ">
+    <div class="text-center">
+        <img src="{% static 'core/img/pic1.png' %}" alt="Profilepic" class="img-thumbnail" width="200px" hight="150px">
+    </div>
+    
+<div class=" mt-5 text-white mx-5 text-justify">
+<h1 class="font-weight-bold st-font">Hello,</h1>
+<div class="px=4" style="line-height:2rem;">
+    <p style="text-indent:100px;">
+        I am <b class="text-warning st-font"> Aditya Singh </b> excited to introduce myself and take my first step into the professional world. I have always been fascinated by the field of engineering, and I am eager to contribute my skills and knowledge to make a positive impact.
+    </p>
+    <p>I am well-versed in various programming languages. I have also worked on various projects of <b class="text-warning"> Machine Learning and Django </b>, including my academic projects, which have provided me with a good understanding of the development process. and I also have got 5<span>⭐</span>and 4<span>⭐</span>in python and Java in <b class="text-success">HackerRank</b>.</p>
+    <P>I have also two <b class="text-warning">NPTEL </b> certificats in java and Data Structure with python and i also done 2 month Machine Learning Course from AcmeGrade Pvt. </P>
+</div>
+</div> 
+<div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-5">Hire Me
+
+    </a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-4  ">Contact</a>
+</div>
+
+</div>
+{% endblock content %}
